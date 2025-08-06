@@ -10,9 +10,12 @@
 
 :root {
   --custom-white: #ffffff;
+  --custom-white-100: #f7f7f7;
+  --custom-black-400: #002d27;
   --custom-green: #004c41;
   --custom-green-200: #7dc54a;
   --custom-green-300: #84c448;
+  --custom-green-400: #587d34;
   --custom-gray: #d9d9d9;
   --custom-gray-200: #f0f0f0;
 }
@@ -82,6 +85,7 @@ li {
 
 label {
   display: block;
+  cursor: pointer;
 }
 
 input {
@@ -112,6 +116,10 @@ svg {
 
 .font--24 {
   font-size: 24px;
+}
+
+.font--32 {
+  font-size: 32px;
 }
 
 .font--36 {
@@ -159,7 +167,7 @@ svg {
   color: var(--custom-white);
   padding: 18px 22px;
   font-size: 24px;
-  line-height: 1.1;
+  line-height: 1;
   text-transform: uppercase;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -197,6 +205,11 @@ svg {
   color: var(--custom-green);
 }
 
+.custom-btn--light {
+  background: var(--custom-green-400);
+  border: 1px solid var(--custom-green);
+}
+
 .custom-btn--md {
   padding: 16px 20px;
 }
@@ -220,6 +233,47 @@ svg {
   overflow: hidden;
 }
 
+.form-label {
+  color: var(--custom-green-400);
+  margin-bottom: 16px;
+}
+
+.input-style {
+  font-family: "FS Albert";
+  font-size: 36px;
+  line-height: 1;
+  color: var(--custom-green);
+  display: flex;
+  align-items: center;
+  padding: 15px 18px;
+  height: 70px;
+  border: 3px solid var(--custom-green);
+  outline: 0;
+  box-shadow: 6px 8px 0px 0px var(--custom-green);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 76, 65, 0.5);
+}
+
+::-moz-placeholder {
+  color: rgba(0, 76, 65, 0.5);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgba(0, 76, 65, 0.5);
+}
+
+:-moz-placeholder {
+  color: rgba(0, 76, 65, 0.5);
+}
+
 /* Reusable CSS Code */
 
 /* 
@@ -239,6 +293,7 @@ body {
 
 main {
   margin-top: 108px;
+  min-height: calc(80vh - 108px);
 }
 
 /* Header Area */
@@ -359,13 +414,13 @@ main {
 /* Header Area */
 
 /* Hero Area */
-.hero-area {
+.hero {
   background: var(--custom-green);
   padding-top: 40px;
   padding-bottom: 100px;
 }
 
-.hero {
+.hero__layout {
   max-width: 1266px;
   display: flex;
   align-items: center;
@@ -409,11 +464,11 @@ main {
 /* Hero Area */
 
 /* Support Area */
-.support-area {
+.support {
   padding: 80px 0;
 }
 
-.support {
+.support__layout {
   max-width: 1285px;
 }
 
@@ -536,11 +591,11 @@ main {
 /* Support Area */
 
 /* Community Area */
-.community-area {
+.community {
   padding: 80px 0;
 }
 
-.community {
+.community__layout {
   max-width: 998px;
   display: flex;
   align-items: center;
@@ -558,30 +613,27 @@ main {
 /* Community Area */
 
 /* Impact Area */
-.impact-area {
+.impact {
   padding: 80px 0;
   background: var(--custom-green);
   position: relative;
   overflow: hidden;
 }
 
-.impact-area::after {
+.impact::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 56%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(132, 196, 72, 0.35) 100%
-  );
+  height: 100%;
+  background: linear-gradient(to top, rgba(132, 196, 72, 0.63) 0%, #004c41 59%);
   pointer-events: none;
   z-index: 10;
+  opacity: 0.5;
 }
 
-.impact {
+.impact__layout {
   max-width: 1185px;
   position: relative;
   z-index: 20;
@@ -648,11 +700,11 @@ main {
 /* Impact Area */
 
 /* About Area */
-.about-area {
+.about {
   padding: 80px 0;
 }
 
-.about {
+.about__layout {
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -698,12 +750,12 @@ main {
 /* About Area */
 
 /* Testimonial Area */
-.testimonial-area {
+.testimonial {
   padding: 40px 0;
   padding-bottom: 14px;
 }
 
-.testimonial {
+.testimonial__layout {
   max-width: 1297px;
 }
 
@@ -752,15 +804,17 @@ main {
 
 .testimonial__card img {
   width: fit-content;
-  height: 50px;
+  height: 40px;
 }
 
 .testimonial__card-content p {
   color: var(--custom-white);
+  font-size: 28px;
 }
 
 .testimonial__card-content h3 {
   color: var(--custom-white);
+  font-size: 28px;
 }
 
 .testimonial__card {
@@ -803,13 +857,13 @@ main {
 /* Testimonial Area */
 
 /* Footer Area */
-.footer-area {
+.footer {
   padding-top: 32px;
   padding-bottom: 17px;
   background: var(--custom-green);
 }
 
-.footer {
+.footer__layout {
   max-width: 1229px;
 }
 
@@ -927,3 +981,350 @@ main {
 }
 
 /* Footer Area */
+
+/* Personal Loan page */
+
+/* Hero Area */
+.common-hero {
+  background: var(--custom-green-300);
+  position: relative;
+}
+
+.common-hero__layout {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1230px;
+  min-height: 475px;
+}
+
+.common-hero__content {
+  width: 100%;
+  max-width: 660px;
+}
+
+.common-hero__content h2,
+.common-hero__content p {
+  color: var(--custom-white-100);
+}
+
+.common-hero__content p {
+  margin-top: 28px;
+}
+
+.common-hero__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 44%;
+  height: 100%;
+}
+
+/* Hero Area */
+
+/* Personal Loan intro */
+.personal-loan-intro {
+  padding: 80px 0;
+}
+
+.personal-loan-intro__layout {
+  max-width: 1125px;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+
+.personal-loan-intro__content {
+  flex: 1;
+}
+
+.personal-loan-intro__image {
+  width: 100%;
+  max-width: 388px;
+}
+
+/* Personal Loan intro */
+
+/* Personal Loan Form */
+.loan-form {
+  padding-top: 110px;
+  padding-bottom: 156px;
+  background: var(--custom-gray-200);
+}
+
+.loan-form__box {
+  max-width: 884px;
+  background: var(--custom-white);
+  padding: 37px;
+  padding-left: 67px;
+  box-shadow: 31px 43px 0px 0px var(--custom-black-400);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.loan-form__box h2 {
+  max-width: 502px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.loan-form__main {
+  margin-top: 32px;
+}
+
+/* Form Elements */
+
+.loan-form__group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.loan-form__radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.loan-form__radio {
+  display: flex;
+  align-items: center;
+}
+
+.loan-form__radio-input {
+  display: none;
+}
+
+.loan-form__radio-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.loan-form__radio-icon {
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--custom-green);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.loan-form__radio-input:checked
+  + .loan-form__radio-content
+  .loan-form__radio-icon {
+  background: var(--custom-green);
+}
+
+.loan-form .custom-btn {
+  margin-top: 50px;
+}
+
+/* Personal Loan Form */
+
+/* CDFI Covers Area */
+.cdfi-covers {
+  padding: 120px 0;
+  background: var(--custom-green-300);
+  color: var(--custom-white);
+  min-height: 804px;
+  position: relative;
+}
+
+.cdfi-covers::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(132, 196, 72, 0.63) 0%, #004c41 59%);
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+.cdfi-covers__layout {
+  max-width: 1216px;
+  position: relative;
+  z-index: 20;
+}
+
+.cdfi-covers__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.common-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.common-lists li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.common-lists img {
+  width: 30px;
+  height: auto;
+  object-fit: contain;
+}
+
+.common-lists p {
+  color: var(--custom-white);
+}
+
+/* CDFI Covers Area */
+
+/* Assess Loan Area */
+.assess-loan {
+  padding: 80px 0;
+}
+
+.assess-loan__layout {
+  max-width: 1210px;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+
+.assess-loan__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.assess-loan__image {
+  width: 100%;
+  max-width: 387px;
+  height: auto;
+  object-fit: contain;
+}
+
+.common-lists--ticks {
+  gap: 8px;
+}
+
+.common-lists--ticks li {
+  gap: 12px;
+}
+
+.common-lists--ticks p {
+  color: var(--custom-green);
+}
+
+/* Assess Loan Area */
+
+/* Discover Loan */
+.discover-loan {
+  padding-top: 80px;
+  padding-bottom: 55px;
+  background: var(--custom-gray-200);
+}
+
+.discover-loan h2 {
+  text-align: center;
+}
+
+.discover-loan__slider-area .swiper-wrapper {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.discover-loan-card {
+  height: 395px;
+  position: relative;
+}
+
+.discover-loan-card img {
+  object-fit: cover;
+}
+
+.discover-loan-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px 24px;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 76, 65, 0.8) 62%
+  );
+  opacity: 1;
+}
+
+.discover-loan-card__content {
+  color: var(--custom-white-100);
+}
+
+.discover-loan-card__content p {
+  margin-top: 8px;
+}
+
+.discover-loan-card__content .custom-btn {
+  margin-top: 16px;
+  border: 1px solid var(--custom-white);
+  display: none;
+}
+
+.discover-loan-card__content .custom-btn:hover {
+  border: 1px solid var(--custom-white);
+}
+
+.swiper-slide-active .discover-loan-card__content .custom-btn {
+  display: flex;
+}
+
+.swiper-slide-active {
+  box-shadow: 1px 34px 35px 0px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0;
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  background: var(--custom-green);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--custom-green-300) !important;
+}
+
+/* Discover Loan */
+
+/* Personal Loan page */

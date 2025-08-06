@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Testimonial Slider
   var swiperTestimonial = new Swiper(".swiper--testimonial", {
-    slidesPerView: 2,
+    slidesPerView: 2.5,
     spaceBetween: 16,
     loop: true,
     speed: 500,
@@ -21,8 +21,31 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 1.5,
       },
       991: {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
       },
+    },
+  });
+
+  var gallerySlider = new Swiper(".swiper--loan", {
+    effect: "coverflow",
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1.8,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination--loan",
+      type: "bullets",
+      clickable: true,
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 150,
+      modifier: 2.2,
+      slideShadows: false,
     },
   });
 
