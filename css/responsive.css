@@ -221,7 +221,7 @@
     margin-top: 16px;
   }
 
-  .common-intro__content p {
+  .common-intro__content > p {
     margin-top: 20px;
   }
 

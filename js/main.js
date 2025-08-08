@@ -58,4 +58,39 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.toggle("overflow-hidden");
     });
   });
+
+  // ACCORDIONS
+  const initAccordion = (selector) => {
+    const buttons = document.querySelectorAll(
+      `${selector} .custom-accordion__button`
+    );
+
+    buttons.forEach((button) => {
+      const content = button.nextElementSibling;
+
+      if (button.classList.contains("custom-accordion__button--active")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+
+      button.addEventListener("click", () => {
+        const isOpen = button.classList.contains(
+          "custom-accordion__button--active"
+        );
+
+        buttons.forEach((btn) => {
+          btn.classList.remove("custom-accordion__button--active");
+          btn.nextElementSibling.style.maxHeight = null;
+        });
+
+        if (!isOpen) {
+          button.classList.add("custom-accordion__button--active");
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  };
+
+  if (document.querySelector(".custom-accordion--faq")) {
+    initAccordion(".custom-accordion--faq");
+  }
 });

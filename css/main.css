@@ -11,14 +11,18 @@
 :root {
   --custom-white: #ffffff;
   --custom-white-100: #f7f7f7;
+  --custom-white-400: #f3f3f3;
+  --custom-black: #000000;
   --custom-black-400: #002d27;
   --custom-green: #004c41;
   --custom-green-100: #004c42;
   --custom-green-200: #7dc54a;
   --custom-green-300: #84c448;
   --custom-green-400: #587d34;
+  --custom-green-500: #006a4d;
   --custom-gray: #d9d9d9;
   --custom-gray-200: #f0f0f0;
+  --custom-gray-400: #828282;
 }
 
 html {
@@ -107,6 +111,10 @@ svg {
   overflow: hidden;
 }
 
+.font--14 {
+  font-size: 14px;
+}
+
 .font--16 {
   font-size: 16px;
 }
@@ -132,8 +140,18 @@ svg {
   line-height: 1.1;
 }
 
+.font--48 {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
 .font--60 {
   font-size: 60px;
+  line-height: 1.1;
+}
+
+.font--64 {
+  font-size: 64px;
   line-height: 1.1;
 }
 
@@ -142,11 +160,16 @@ svg {
   line-height: 1.1;
 }
 
+.font--bold {
+  font-weight: 700;
+}
+
 /* Default CSS Code */
 
 /* 
 
 font-family: "FS Albert";
+font-family: "DM Sans";
 
 */
 
@@ -224,6 +247,8 @@ main {
 .custom-btn--white {
   background: var(--custom-white);
   color: var(--custom-green);
+  padding: 17px 22px;
+  text-transform: none;
 }
 
 .custom-btn--light {
@@ -295,6 +320,23 @@ main {
   color: rgba(0, 76, 65, 0.5);
 }
 
+.lloyd-input-style::-webkit-input-placeholder {
+  color: var(--custom-gray-400);
+}
+
+.lloyd-input-style::-moz-placeholder {
+  color: var(--custom-gray-400);
+  opacity: 1;
+}
+
+.lloyd-input-style:-ms-input-placeholder {
+  color: var(--custom-gray-400);
+}
+
+.lloyd-input-style:-moz-placeholder {
+  color: var(--custom-gray-400);
+}
+
 .form-select {
   position: relative;
 }
@@ -364,6 +406,7 @@ main {
 .common-intro__image {
   width: 100%;
   max-width: 520px;
+  height: auto;
 }
 
 .common-intro--no-margin p,
@@ -411,6 +454,7 @@ main {
 
 .common-lists--ticks-sm img {
   width: 20px;
+  margin-top: 10px;
 }
 
 .common-lists--dot,
@@ -778,9 +822,10 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
-.common-intro__images {
+.common-intro--impact .common-intro__images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -1566,10 +1611,6 @@ main {
   gap: 0;
 }
 
-.common-intro--enterprise .common-lists img {
-  margin-top: 12px;
-}
-
 /* Enterprise Loan intro */
 
 /* Enterprise Loan Form */
@@ -1606,4 +1647,957 @@ main {
 
 /* Enterprise Who Apply */
 
+/* Enterprise Types Offer */
+
+.common-intro--offer .common-intro__layout {
+  max-width: 1200px;
+}
+
+.common-intro--offer .common-intro__image {
+  max-width: 100%;
+  margin-top: 8px;
+}
+
+.common-intro--offer .common-intro__image img {
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* Enterprise Types Offer */
+
+/* How Enterprise Application */
+.common-intro--how .common-intro__layout {
+  max-width: 1278px;
+  align-items: flex-start;
+}
+
+.common-intro--how .common-intro__image {
+  max-width: 481px;
+  height: auto;
+}
+
+.common-intro--how h2 {
+  margin-bottom: 80px;
+}
+
+/* How Enterprise Application */
+
 /* Enterprise Loan page */
+
+/* Our Impact page */
+
+/* Impact Hero Area */
+.common-hero--impact .common-hero__image img {
+  object-position: top;
+}
+/* Impact Hero Area */
+
+/* Our Impact intro */
+.common-intro--our-impact .common-intro__layout {
+  max-width: 1048px;
+}
+
+.common-intro--our-impact .common-intro__image {
+  max-width: 311px;
+}
+
+/* Our Impact intro */
+
+/* Impact Numbers */
+
+.impact-numbers h2 {
+  text-align: center;
+}
+
+.impact-numbers__items {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.impact-numbers__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.impact-numbers__item h3 {
+  font-weight: 800;
+}
+
+.impact-numbers__item p {
+  font-weight: 700;
+}
+
+/* Impact Numbers */
+
+/* Discover UK */
+
+.discover-uk {
+  padding: 80px 0;
+}
+
+.discover-uk__type-list {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.discover-uk__type {
+  position: relative;
+  height: 390px;
+  background: var(--custom-green);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.discover-uk__type--individual {
+  height: 414px;
+  background: var(--custom-green-300);
+  border: 6px solid var(--custom-black);
+  box-shadow: 29px 29px 31px 0px rgba(0, 0, 0, 0.25);
+}
+
+.discover-uk__type--enterprise {
+  background: var(--custom-gray-200);
+}
+
+.discover-uk__type img {
+  position: relative;
+  top: -65px;
+}
+
+.discover-uk__type h3 {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.discover-uk__type--individual h3 {
+  font-weight: 700;
+  bottom: 25px;
+}
+
+.discover-uk__type--smes h3 {
+  color: var(--custom-white);
+}
+
+.discover-uk__impact-area {
+  padding: 70px 23px;
+  background: var(--custom-gray-200);
+  border: 5px solid var(--custom-green);
+  margin-top: 12px;
+  position: relative;
+  z-index: 30;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.discover-uk__impact-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.discover-uk__impact-image {
+  position: relative;
+  height: auto;
+  aspect-ratio: 400/259;
+}
+
+.discover-uk__impact-image,
+.discover-uk__impact-image-main {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.discover-uk__impact-image-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  height: 70px;
+  border-left: 5px solid var(--custom-green-200);
+  border-bottom: 5px solid var(--custom-green-200);
+  border-top-right-radius: 30px;
+}
+
+.discover-uk__impact-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: fit-content;
+  padding: 10px;
+  background: var(--custom-green-300);
+  border-top-right-radius: 6px;
+}
+
+.discover-uk__impact-label h4 {
+  font-family: "DM Sans";
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.discover-uk__impact-content {
+  padding: 31px 27px;
+  background: var(--custom-green-200);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.discover-uk__impact-content p {
+  min-height: 96px;
+}
+
+/* Discover UK */
+
+/* Stats User Area */
+
+.stats.stats--user {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+.stats--user .stats__items {
+  margin-top: 10px;
+}
+
+/* Stats User Area */
+
+/* Our Impact page */
+
+/* Article page */
+/* Article Hero Area */
+.article-hero {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.article-hero__layout {
+  max-width: 1200px;
+}
+
+.article-hero__image {
+  width: 100%;
+  height: 799px;
+  position: relative;
+}
+
+.article-hero__image::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: var(--custom-green);
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 45px;
+  z-index: 10;
+}
+
+.article-hero__image-main {
+  position: relative;
+  z-index: 20;
+}
+
+.article-hero__image,
+.article-hero__image-main {
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+.article-hero__image-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  height: 92px;
+  object-fit: contain;
+  z-index: 30;
+}
+
+.article-hero__image-label {
+  padding: 20px 62px;
+  background: var(--custom-green-300);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: fit-content;
+  z-index: 30;
+  border-top-right-radius: 8px;
+}
+
+.article-hero__image-label h3 {
+  font-family: "DM Sans";
+  font-weight: 700;
+}
+
+.article-hero__content {
+  margin-top: 64px;
+}
+
+.article-hero__content h2 {
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.article-hero__details {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.article-hero__details--reverse {
+  flex-direction: row-reverse;
+}
+
+.article-hero__details-image {
+  width: 100%;
+  max-width: 352px;
+}
+
+.article-hero__details-content {
+  flex: 1;
+}
+
+.article-hero__details--reverse p {
+  font-weight: 700;
+}
+
+.article-hero__content > p {
+  margin-top: 32px;
+}
+
+.article-hero__content > .custom-btn {
+  margin-top: 28px;
+}
+
+/* Article Hero Area */
+
+/* Find Help */
+.find-help {
+  background: var(--custom-green);
+  position: relative;
+  overflow: hidden;
+  height: 414px;
+}
+
+.find-help--wrap {
+  padding: 0 117px;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.find-help::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(132, 196, 72, 0) 31%,
+    rgba(132, 196, 72, 0.56) 100%
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+.find-help__layout {
+  max-width: 1200px;
+  position: relative;
+}
+
+.find-help__image {
+  position: absolute;
+  top: 37px;
+  right: -50px;
+  width: 374px;
+  height: 560px;
+  z-index: 20;
+}
+
+.find-help--wrap .find-help__image {
+  position: absolute;
+  top: 37px;
+  left: 619px;
+  right: auto;
+}
+
+.find-help__image img {
+  object-fit: contain;
+}
+
+.find-help__content {
+  position: relative;
+  z-index: 30;
+  max-width: 599px;
+  padding: 94px 0;
+}
+
+.find-help h2 {
+  color: var(--custom-white);
+  font-weight: 400;
+}
+
+.find-help .custom-btn {
+  margin-top: 40px;
+}
+
+/* Find Help */
+
+/* Related Stories */
+
+.related-stories {
+  margin-top: 24px;
+  padding-bottom: 80px;
+}
+
+.related-stories__layout {
+  max-width: 1200px;
+}
+
+.related-stories__card-list {
+  max-width: 1032px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.related-stories__card-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 324/184;
+  position: relative;
+}
+
+.related-stories__card-image-main {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.related-stories__card-image-label,
+.related-stories__card-image-logo {
+  position: absolute;
+  top: 25px;
+  left: 27px;
+  width: fit-content;
+  height: 25px;
+}
+
+.related-stories__card-image-label {
+  padding: 0 10px;
+  background: var(--custom-green-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.related-stories__card-image-logo {
+  left: auto;
+  right: 17px;
+  height: 27px;
+  border: 1px solid var(--custom-black);
+}
+
+.related-stories__card-image-label h4 {
+  font-family: "DM Sans";
+  font-weight: 400;
+}
+
+.related-stories__card-content {
+  background: var(--custom-green);
+  color: var(--custom-white);
+  padding: 31px 27px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.related-stories__card-content p {
+  margin-top: 16px;
+}
+
+.related-stories__card-content .custom-btn {
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+/* Related Stories */
+
+/* Article page */
+
+/* Members page */
+
+/* Members intro */
+.common-intro--members .common-intro__layout {
+  max-width: 1269px;
+}
+
+.common-intro--members .common-intro__image {
+  max-width: 470px;
+}
+/* Members intro */
+
+/* Stats Area */
+.stats {
+  padding-top: 40px;
+}
+
+.stats__layout {
+  max-width: 1285px;
+}
+
+.stats h2 {
+  text-align: center;
+}
+
+.stats__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 36px;
+}
+
+.stats__image {
+  width: 100%;
+  max-width: 364px;
+}
+
+.stats__list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.stats__list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stats__list li h3 {
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stats__list li p {
+  font-weight: 700;
+}
+
+/* Stats Area */
+
+/* Faq Area */
+
+.faq {
+  padding: 80px 0;
+}
+
+.faq__layout {
+  max-width: 1200px;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.custom-accordion {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.custom-accordion__item {
+  border-bottom: 3px solid var(--custom-green-300);
+  position: relative;
+  box-shadow: 6px 8px 0px 0px var(--custom-black-400);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.custom-accordion__button {
+  font-family: "FS Albert";
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 18px;
+  width: 100%;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+  text-align: left;
+  background-color: var(--custom-white);
+  color: var(--custom-green);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.custom-accordion__button span {
+  flex: 1;
+}
+
+.custom-accordion__icon-main {
+  display: none;
+}
+
+.custom-accordion__icon-main--plus {
+  display: block;
+}
+
+.custom-accordion__icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+
+.custom-accordion__button--active .custom-accordion__icon-main--plus {
+  display: none;
+}
+
+.custom-accordion__button--active .custom-accordion__icon-main--minus {
+  display: block;
+}
+
+.custom-accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.custom-accordion__content h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.custom-accordion__content-info {
+  padding: 30px;
+  padding-top: 0;
+}
+
+.custom-accordion__content-descs {
+  margin-top: 15px;
+}
+
+.custom-accordion__content-descs p {
+  margin-bottom: 15px;
+}
+
+.custom-accordion__content-descs p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Faq Area */
+
+/* Contact Info */
+
+.contact-info {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.contact-info__layout {
+  max-width: 1200px;
+}
+
+.contact-info__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200/825;
+}
+
+.contact-info__content {
+  margin-top: 95px;
+}
+
+.contact-info__address {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-info__emails {
+  margin-top: 30px;
+}
+
+.contact-info__emails p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-info__emails p a {
+  font-size: 36px;
+}
+
+.contact-info__web {
+  text-decoration: underline;
+}
+
+/* Contact Info */
+
+/* Members page */
+
+/* Lloyd Bank Page */
+
+/* Lloyd Hero Area */
+.lloyd {
+  padding: 60px 0;
+  background: var(--custom-white-400);
+}
+
+.lloyd--hide {
+  display: none;
+}
+
+.lloyd__layout {
+  max-width: 1200px;
+}
+
+.lloyd__hero-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200/701;
+  position: relative;
+}
+
+.lloyd__hero-image img {
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.lloyd__hero-image-card {
+  position: absolute;
+  left: 42px;
+  bottom: 44px;
+  width: 100%;
+  max-width: 682px;
+  background: var(--custom-green-500);
+  color: var(--custom-white);
+  padding: 40px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.lloyd__hero-image-card h1 {
+  color: var(--custom-white-100);
+  margin-bottom: 10px;
+}
+
+/* Lloyd Hero Area */
+
+/* Form Area */
+.lloyd__form-area {
+  margin-top: 95px;
+  background: var(--custom-white);
+  padding: 40px;
+  border-top: 6px solid var(--custom-green-500);
+}
+
+.lloyd__logo {
+  width: fit-content;
+  height: 102px;
+}
+
+.lloyd__form h2 {
+  color: var(--custom-black);
+  margin-top: 36px;
+}
+
+.lloyd__form-main {
+  margin-top: 24px;
+}
+
+.lloyd-form-group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lloyd-form-label {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--custom-green);
+}
+
+.lloyd-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lloyd-input-style {
+  display: block;
+  outline: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  padding: 8px 17px;
+  background: var(--custom-white);
+  color: var(--custom-green);
+  border: 1px solid var(--custom-black);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.lloyd-form-select {
+  position: relative;
+}
+
+.lloyd-input-style--select {
+  padding: 0 18px;
+  line-height: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.lloyd-form-select__arrow {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  width: fit-content;
+  height: 24px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.lloyd-form__checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lloyd-form__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.lloyd-form__checkbox-input {
+  display: none;
+}
+
+.lloyd-form__checkbox-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lloyd-form__checkbox-icon {
+  width: 20px;
+  height: 19px;
+  border: 1px solid var(--custom-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.lloyd-form__checkbox-icon img {
+  width: 18px;
+  height: auto;
+  object-fit: contain;
+  display: none;
+}
+
+.lloyd-form__checkbox-input:checked
+  + .lloyd-form__checkbox-content
+  .lloyd-form__checkbox-icon
+  img {
+  display: block;
+}
+
+.lloyd-form__checkbox-label {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.lloyd__form-agree {
+  color: var(--custom-black);
+  margin-top: 24px;
+}
+
+.lloyd__form .custom-btn {
+  margin-top: 24px;
+}
+
+/* Form Area */
+
+/* Lloyd Success */
+
+.lloyd-success {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.lloyd-success__logo {
+  width: fit-content;
+  height: 55px;
+}
+
+.lloyd-success__logo img {
+  object-fit: contain;
+}
+
+/* Lloyd Success */
+
+/* Lloyd Bank Page */
