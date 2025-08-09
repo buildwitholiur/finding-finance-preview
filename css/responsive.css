@@ -7,6 +7,22 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .discover-uk__impact-content h3 {
+    min-height: 87px;
+  }
+
+  .article-hero__image {
+    height: 600px;
+  }
+
+  .find-help--wrap {
+    padding: 0;
+  }
+
+  .contact-info__image {
+    aspect-ratio: 1200/600;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -18,8 +34,16 @@
     font-size: 32px;
   }
 
+  .font--48 {
+    font-size: 36px;
+  }
+
   .font--60 {
     font-size: 48px;
+  }
+
+  .font--64 {
+    font-size: 40px;
   }
 
   .font--80 {
@@ -54,6 +78,10 @@
   .common-intro__layout {
     flex-direction: column-reverse;
     gap: 60px;
+  }
+
+  .common-intro__layout--reverse {
+    flex-direction: column;
   }
 
   .common-intro--community .common-intro__image {
@@ -134,6 +162,167 @@
   .testimonial__card-content h3 {
     font-size: 24px;
   }
+
+  .common-hero {
+    padding: 80px 0;
+  }
+
+  .common-hero__layout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  .common-hero__image {
+    position: static;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .common-hero__content p {
+    margin-top: 16px;
+  }
+
+  .discover-loan-card__content h3 {
+    font-size: 30px;
+  }
+
+  .discover-loan-card__content p {
+    font-size: 20px;
+  }
+
+  .discover-loan-card {
+    height: 350px;
+  }
+
+  .business-types__card-list {
+    flex-direction: column;
+  }
+
+  .business-types__card {
+    width: 100%;
+    max-width: 306px;
+  }
+
+  .business-types__card--long-img,
+  .business-types__card-left-top img {
+    flex: 1 !important;
+    max-width: 100% !important;
+  }
+
+  .business-types__card--content--long {
+    width: 100%;
+    min-height: 200px;
+    max-width: 100% !important;
+  }
+
+  .business-types__card-list {
+    gap: 0;
+  }
+
+  .input-style--select option {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .common-intro--work .common-intro__image {
+    max-width: 350px;
+  }
+
+  .common-intro--how .common-intro__layout {
+    align-items: center;
+  }
+
+  .common-intro--how .common-intro__image {
+    max-width: 300px;
+  }
+
+  .impact-numbers__item h3 {
+    font-size: 40px;
+  }
+
+  .impact-numbers__item {
+    gap: 10px;
+  }
+
+  .impact-numbers__item p {
+    font-size: 24px;
+  }
+
+  .discover-uk__type-list {
+    margin-top: 100px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
+  }
+
+  .discover-uk__type {
+    width: 100%;
+    max-width: 356px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .discover-uk__impact-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .discover-uk__impact {
+    width: 100%;
+    max-width: 401px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stats__items {
+    flex-direction: column;
+  }
+
+  .stats--user .stats__items {
+    margin-top: 40px;
+  }
+
+  .find-help--wrap {
+    max-width: calc(100% - 120px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .find-help--wrap .find-help__image {
+    left: 480px;
+  }
+
+  .related-stories__card-list {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custom-accordion__button {
+    font-size: 36px;
+    line-height: 1.1;
+    padding: 12px 18px;
+  }
+
+  .custom-accordion__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .find-help h2 {
+    font-size: 40px;
+  }
+
+  .contact-info__content {
+    margin-top: 40px;
+  }
+
+  .contact-info__emails p a {
+    font-size: 30px;
+  }
+
+  .lloyd__hero-image {
+    aspect-ratio: 1200/900;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -160,6 +349,91 @@
     left: auto;
     right: -30px;
   }
+
+  .loan-form__box {
+    padding: 30px;
+  }
+
+  .business-types__card {
+    max-width: 206px;
+    height: 200px;
+  }
+
+  .business-types__card h3 {
+    font-size: 28px;
+  }
+
+  .business-types__card--cut-tr {
+    border-top-right-radius: 80px;
+  }
+
+  .business-types__card--cut-bl {
+    border-bottom-left-radius: 80px;
+  }
+
+  .business-types__card--cut-tl {
+    border-top-left-radius: 80px;
+  }
+
+  .business-types__card--cut-br {
+    border-bottom-right-radius: 80px;
+  }
+
+  .impact-numbers__items {
+    flex-direction: column;
+  }
+
+  .article-hero__details {
+    flex-direction: column;
+  }
+
+  .article-hero__details-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .find-help--wrap .find-help__image,
+  .find-help__image {
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: -60px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .find-help__layout {
+    position: inherit;
+  }
+
+  .find-help__content {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .find-help {
+    height: 700px;
+  }
+
+  .find-help--wrap {
+    height: 750px;
+  }
+
+  .find-help__image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lloyd__hero-image-card {
+    max-width: 480px;
+  }
+
+  .lloyd__hero-image {
+    aspect-ratio: 1200/1200;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -167,12 +441,24 @@
     font-size: 22px;
   }
 
+  .font--32 {
+    font-size: 20px;
+  }
+
   .font--40 {
     font-size: 28px;
   }
 
+  .font--48 {
+    font-size: 30px;
+  }
+
   .font--60 {
     font-size: 36px;
+  }
+
+  .font--64 {
+    font-size: 40px;
   }
 
   .font--80 {
@@ -225,6 +511,10 @@
     margin-top: 20px;
   }
 
+  .common-intro--no-margin .common-intro__content > p {
+    margin-top: 0;
+  }
+
   .common-intro--community .common-intro__image {
     height: 400px;
   }
@@ -261,7 +551,7 @@
   }
 
   .testimonial__card img {
-    height: 36px;
+    height: 30px;
   }
 
   .testimonial__card-content p,
@@ -352,5 +642,358 @@
 
   .support {
     padding-bottom: 0;
+  }
+
+  .common-hero {
+    padding: 60px 0;
+  }
+
+  .common-hero__layout {
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .common-hero__content p {
+    margin-top: 10px;
+  }
+
+  .loan-form {
+    padding: 80px 0;
+  }
+
+  .input-style {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .input-style--select option {
+    font-size: 20px;
+  }
+
+  .loan-form__box {
+    padding: 30px 20px;
+    box-shadow: 10px 20px 0px 0px var(--custom-black-400) !important;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .loan-form__radio-content {
+    gap: 8px;
+  }
+
+  .loan-form__radio-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .loan-form__group-list {
+    gap: 30px;
+  }
+
+  .common-intro--covers {
+    padding: 80px 0;
+  }
+
+  .common-lists {
+    gap: 8px;
+  }
+
+  .common-lists img {
+    width: 24px;
+    margin-top: 3px;
+  }
+
+  .common-intro__layout {
+    gap: 50px;
+  }
+
+  .discover-loan-card__content h3 {
+    font-size: 24px;
+  }
+
+  .loan-form .custom-btn {
+    margin-top: 40px;
+  }
+
+  .discover-loan-card {
+    height: 300px;
+  }
+
+  .business-types__card-left-top,
+  .business-types__card-left-bottom {
+    flex-direction: column;
+  }
+
+  .business-types__card {
+    max-width: 100%;
+    height: 230px;
+  }
+
+  .business-types__card--long-img,
+  .business-types__card-left-top img {
+    flex: none !important;
+  }
+
+  .discover-loan h2 {
+    padding: 0 25px;
+  }
+
+  .loan-form__intro {
+    margin-bottom: 40px;
+  }
+
+  .common-intro--work {
+    padding-top: 40px;
+  }
+
+  .common-intro--enterprise .common-lists {
+    margin-top: 30px;
+  }
+
+  .loan-form--enterprise {
+    padding-bottom: 40px;
+  }
+
+  .common-intro--offer .common-intro__image img {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .common-intro--offer .common-intro__image {
+    margin-top: 20px;
+  }
+
+  .common-intro--how {
+    padding-top: 40px;
+  }
+
+  .common-intro--how h2 {
+    margin-bottom: 40px;
+  }
+
+  .discover-uk__impact-area {
+    padding: 40px 20px;
+  }
+
+  .discover-uk__impact-image-logo {
+    height: 50px;
+  }
+
+  .discover-uk__impact-label h4 {
+    font-size: 20px;
+  }
+
+  .discover-uk__impact-content {
+    padding: 20px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .discover-uk__impact-image,
+  .discover-uk__impact-image-main {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .discover-uk__impact-image-logo {
+    border-top-right-radius: 16px;
+  }
+
+  .stats__list {
+    gap: 20px;
+  }
+
+  .stats__list li h3 {
+    font-size: 40px;
+  }
+
+  .stats__list li p {
+    font-size: 24px;
+  }
+
+  .related-stories__card-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .article-hero__image-logo {
+    height: 50px;
+  }
+
+  .article-hero__image-label {
+    padding: 12px 25px;
+  }
+
+  .article-hero__image-label h3 {
+    font-size: 24px;
+  }
+
+  .article-hero__image {
+    height: 300px;
+  }
+
+  .article-hero__image,
+  .article-hero__image-main {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .article-hero__image::after {
+    top: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .article-hero__content {
+    margin-top: 50px;
+  }
+
+  .find-help--wrap {
+    max-width: calc(100% - 50px);
+  }
+
+  .find-help__image {
+    position: absolute;
+
+    width: 274px;
+    height: auto;
+  }
+
+  .stats {
+    padding-top: 0;
+  }
+
+  .find-help {
+    height: 600px;
+  }
+
+  .stats li {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stats__list li p {
+    text-align: center;
+  }
+
+  .custom-accordion__button {
+    font-size: 22px;
+    line-height: 1.1;
+    padding: 8px 15px;
+  }
+
+  .custom-accordion__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-info__image {
+    aspect-ratio: 1200/900;
+  }
+
+  .contact-info__emails p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .contact-info__emails p a {
+    font-size: 22px;
+  }
+
+  .contact-info__emails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-info__emails {
+    margin-top: 20px;
+  }
+
+  .contact-info {
+    padding-bottom: 80px;
+  }
+
+  .find-help h2 {
+    font-size: 30px;
+  }
+
+  .lloyd__hero-image-card {
+    padding: 20px;
+    left: 50%;
+    bottom: 20px;
+    max-width: calc(100% - 40px);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .lloyd__hero-image {
+    aspect-ratio: 1200/2400;
+  }
+
+  .lloyd__hero-image-card,
+  .lloyd__hero-image img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .lloyd__form-area {
+    padding: 40px 20px;
+  }
+
+  .lloyd-form-label,
+  .lloyd-input-style,
+  .lloyd-form__checkbox-label {
+    font-size: 20px;
+  }
+
+  .lloyd__hero-image-card h1 {
+    font-size: 28px;
+  }
+
+  .lloyd__hero-image-card p {
+    font-size: 22px;
+  }
+
+  .lloyd__logo {
+    height: 60px;
+  }
+
+  .lloyd-input-style {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+
+  .lloyd-success__info {
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .lloyd-success__images-top,
+  .lloyd-success__images-bottom {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .lloyd-success__image {
+    flex: none;
+    max-width: 100%;
+    height: 270px;
   }
 }

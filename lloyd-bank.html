@@ -12,12 +12,6 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
 
-    <!-- Swiper Slider -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
@@ -32,7 +26,7 @@
     <!-- Header Area -->
     <header class="header-area">
       <nav class="nav content-center">
-        <a href="#" class="nav__logo">
+        <a href="index.html" class="nav__logo">
           <img class="object-contain" src="images/logo.png" alt="logo" />
         </a>
 
@@ -46,20 +40,24 @@
 
         <ul class="nav__list">
           <li>
-            <a href="#" class="nav__link nav__link--active">Homepage</a>
+            <a href="index.html" class="nav__link nav__link--active"
+              >Homepage</a
+            >
           </li>
           <li>
-            <a href="#" class="nav__link">Our CDFI Members</a>
+            <a href="members.html" class="nav__link">Our CDFI Members</a>
           </li>
           <li>
-            <a href="#" class="nav__link">Our Impact</a>
+            <a href="our-impact.html" class="nav__link">Our Impact</a>
           </li>
           <li>
-            <a href="#" class="nav__link">Contact</a>
+            <a href="contact-us.html" class="nav__link">Contact</a>
           </li>
         </ul>
 
-        <a href="#" class="custom-btn custom-btn--md">Loans & Support</a>
+        <a href="personal-loan.html" class="custom-btn custom-btn--md"
+          >Loans & Support</a
+        >
       </nav>
     </header>
     <!-- Header Area -->
@@ -67,7 +65,7 @@
     <!-- Main Content -->
     <main>
       <!-- Lloyd Area -->
-      <section class="lloyd lloyd--hide">
+      <section class="lloyd">
         <div class="container">
           <div class="lloyd__layout content-center">
             <!-- Hero Area -->
@@ -304,10 +302,58 @@
       <!-- Lloyd Success -->
       <section class="lloyd-success">
         <div class="container">
-          <div class="lloyd-success__layout">
+          <div class="lloyd-success__layout content-center">
             <a href="#" class="lloyd-success__logo">
               <img src="images/lloyd-logo.png" alt="lloyd logo" />
             </a>
+
+            <div class="lloyd-success__info">
+              <h2 class="font--60">Thanks for your submission!</h2>
+
+              <p class="font--24">
+                A local CDFI partner may be in touch with the customer to
+                discuss next steps. They will review their information and
+                contact them directly to explore their business needs, provide
+                more details on available finance options, and guide them
+                through the application process if appropriate.
+              </p>
+            </div>
+
+            <!-- Lloyd Success Images -->
+            <div class="lloyd-success__images">
+              <div class="lloyd-success__images-top">
+                <div
+                  class="lloyd-success__image lloyd-success__image--1 lloyd-success__image--highlight"
+                >
+                  <img src="images/success-image-1.jpg" alt="Success Image" />
+                </div>
+                <div class="lloyd-success__image lloyd-success__image--2">
+                  <img src="images/success-image-2.jpg" alt="Success Image" />
+                </div>
+                <div class="lloyd-success__image lloyd-success__image--3">
+                  <img src="images/success-image-3.jpg" alt="Success Image" />
+                </div>
+              </div>
+
+              <div class="lloyd-success__images-bottom">
+                <div
+                  class="lloyd-success__image lloyd-success__image--4 lloyd-success__image--highlight-light"
+                >
+                  <img src="images/success-image-4.jpg" alt="Success Image" />
+                </div>
+                <div class="lloyd-success__image lloyd-success__image--5">
+                  <img src="images/success-image-5.jpg" alt="Success Image" />
+                </div>
+                <div class="lloyd-success__image lloyd-success__image--6">
+                  <img src="images/success-image-6.jpg" alt="Success Image" />
+                </div>
+              </div>
+            </div>
+            <!-- Lloyd Success Images -->
+
+            <a href="#" class="custom-btn"
+              >Back to homepage <img src="images/button-arrow.svg" alt="arrow"
+            /></a>
           </div>
         </div>
       </section>
@@ -321,7 +367,7 @@
         <div class="footer__layout content-center">
           <div class="footer__top">
             <div class="footer__intro">
-              <a href="#" class="footer__logo">
+              <a href="index.html" class="footer__logo">
                 <img
                   class="object-contain"
                   src="images/footer-logo.png"
@@ -336,8 +382,14 @@
             </div>
 
             <ul class="footer__nav-list">
-              <li><a href="#" class="footer__nav-link">Other Help</a></li>
-              <li><a href="#" class="footer__nav-link">Contact</a></li>
+              <li>
+                <a href="lloyd-bank.html" class="footer__nav-link"
+                  >Other Help</a
+                >
+              </li>
+              <li>
+                <a href="contact-us.html" class="footer__nav-link">Contact</a>
+              </li>
               <li><a href="#" class="footer__nav-link">Cookie Policy</a></li>
               <li>
                 <a href="#" class="footer__nav-link">Terms & Conditions</a>
@@ -387,7 +439,6 @@
     <!-- Footer Area -->
 
     <!-- JS Files -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
